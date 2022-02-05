@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border: 1px solid black;
+    padding: 20px 0;
+    margin: 20px;
+}
+.container div {
+    margin: 20px;
+    
+}
+.top-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-container li {
+    list-style: none;
+}
+.top-container button{
+    padding: 2px 10px;
+}
+.content-container{
+    display: flex;
+}

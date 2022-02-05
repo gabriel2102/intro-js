@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.top-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: silver;
+    align-items: center;
+}
+.top-bar button{
+    background-color: turquoise;
+    color: white;
+    padding: 2px 10px;
+    
+}
+.body-content{
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+    padding: 0 70px;
+}
+
+.def-content{
+    display: flex;
+    flex-direction: column;
+}    
+.box{
+    border: 2px solid black;
+    margin-bottom: 10px;
+    display: flex;
+}
+.box-left{
+    padding: 5px;
+}
+.box-left > *{
+    margin-bottom: 10px;
+}
+.box-right{
+    padding: 20px;
+}
+.side-right{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-left: 10px;
+    padding: 10px;
+    height: 50%;
+}
+.side-right > *{
+    padding: 10px;
+}
+.add{
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px black;
+}

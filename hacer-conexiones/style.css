@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{  
+    display: flex;
+    flex-direction: column;
+    width: 100hv;
+}
+
+.top-bar{
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    padding: 0 200px;
+}
+.top-bar ul{
+    display: flex;
+}
+.top-bar ul li{
+    list-style-type: none;
+    margin: 5px;
+}
+.top-bar a{
+    text-decoration: none;
+    color: white;
+}
+.top-bar-left{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right: 15px;
+}
+.btn{
+    background-color: turquoise;
+    padding: 2px 20px;
+    color: white;
+    border: none;
+    
+}
+.main-content{
+    display: flex;
+    padding: 0 200px;
+    justify-content: space-between;
+}
+.profile{
+    flex:1;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid gainsboro;
+    margin-bottom: 10px;
+}
+.card > div{
+    padding: 5px;
+}
+.card-top-bar{
+    height: 30px;
+    background-color: #17A2B8;
+}
+.icon{
+    width: 15px;
+}
+.profile-photo{
+    width: 20%;
+    margin-top: -20px;
+}
+.place{
+    display: flex;
+    align-items: center;
+}
+.btn-edit{
+    display: flex;
+    align-items: center;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid gainsboro;
+}
+.education > div{
+    padding: 5px;
+}
+.top-bar-education{
+    background-color: gray;
+    color: white;
+}
+.education-content{
+    padding: 5px;
+}
+.education-content h4{
+    color: 
+    gray;
+}
+.content-card-right {
+    margin: 0 5px;
+    margin-bottom: 10px;
+    border: 5px solid gainsboro;
+}
+.top-bar-right-side{
+    display: flex;
+    padding: 2px 0;
+    background-color: gray;
+    color: white;
+}
+.top-bar-right-side > *{
+    margin: 0 5px
+}
+.request{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.request > * {
+    margin: 5px;
+}
+.icon-profile{
+    width: 30px;
+}
+.btn-profile{
+    width: 20px;
+    height: 20px;
+}
+.connection{
+    display: flex;
+}
+.connection > *{
+    margin: 10px
+}
+.link-view-more{
+    border-top: 5px solid gainsboro;
+    padding: 10px;
+
+}

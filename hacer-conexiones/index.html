@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Página de Perfil</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">
+                    <h1 class="title">Profile</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Find Connections</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton">
+                <button class="btn">Sign Out</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="profile">
+                <div class="card">
+                    <div class="card-top-bar"></div>
+                    <div class="info-profile">
+                        <div class="photo">
+                            <img class="profile-photo" src="img/user-circle.png">
+                        </div>
+                        <div class="name" id="name">
+                            <h1>Jane Doe</h1>
+                        </div>
+                        <div class="place">
+                            <img class="icon" src="img/map-marker.png">
+                            <p>Seattle</p>
+                        </div>
+                        <div class="profile-description">
+                            <p>Developer | Engineer | Problem Solver</p>
+                            <p>Master of Shadow and the Internet!</p>
+                        </div>
+                        <div class="btn-edit">
+                            <img class="icon" src="img/gear.png">
+                            <a href="#" onclick="editProfile()">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="top-bar-education">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="education-content">
+                        <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                        <h4>Dec 2019 - Mar 2020</h4>
+                        <h5>Triple black belt in Python, MERN and C#</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="side-right">
+                <div class="content-card-right">
+                    <div class="top-bar-right-side">
+                        <p class="num-request" id="num-request">2</p>
+                        <p class="title-request">Connection Requests</p>
+                    </div>
+                    <div class="requests">
+                        <div class="request">
+                            <img class="icon-profile" src="img/user-circle.png">
+                            <p class="name-request">Todd E</p>
+                            <img class="btn-profile" onclick="remove(this)" id="accept" src="img/accept-circle.png">
+                            <img class="btn-profile" onclick="remove(this)" id="reject" src="img/close-circle.png">
+                        </div>
+                        <div class="request">
+                            <img class="icon-profile" src="img/user-circle.png">
+                            <p class="name-request">Phil K</p>
+                            <img class="btn-profile" onclick="remove(this)" id="accept" src="img/accept-circle.png">
+                            <img class="btn-profile" onclick="remove(this)" id="reject" src="img/close-circle.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card-right">
+                    <div class="top-bar-right-side">
+                        <p class="total-connection" id="total-connection">500</p>
+                        <p class="title-connecition">Your Connections</p>
+                    </div>
+                    <div class="content-connections">
+                        <div class="connection">
+                            <img class="icon-profile" src="img/user-circle.png">
+                            <p class="name-connection"> Adrien D</p>
+                        </div>
+                        <div class="connection">
+                            <img class="icon-profile" src="img/user-circle.png">
+                            <p class="name-connection">Anne J</p>
+                        </div>
+                        <div class="connection">
+                            <img class="icon-profile" src="img/user-circle.png">
+                            <p class="name-connection">Alayne T</p>
+                        </div>
+                        <div class="connection">
+                            <img class="icon-profile" src="img/user-circle.png">
+                            <p class="name-connection">Arry T</p>
+                        </div>
+                    </div>
+                    <div class="link-view-more">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

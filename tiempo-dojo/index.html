@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Tiempo Dojo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="container2">
+                <div class="logo">
+                    <h1>DojoWeather</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#" class="btn-menu" onclick="alerta()">Burbank</a></li>
+                        <li><a href="#" class="btn-menu" onclick="alerta()">Chicago</a></li>
+                        <li><a href="#" class="btn-menu" onclick="alerta()">Dallas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <div class="container2">
+                <div class="ciudad">
+                    <h2>San Jose</h2>
+                </div>
+                <div class="medidas">
+                    <span>show temperature in</span>
+                    <select onchange="calcular(this)">
+                        <option>°C</option>
+                        <option>°F</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="container2">
+                <div class="day">
+                    <h2>Today</h2>
+                    <img src="assets/some_rain.png">
+                    <p>some rain</p>
+                    <ul>
+                        <li class="max" id="temp1">24°</li>
+                        <li class="min" id="temp2">18°</li>
+                    </ul>
+                </div>
+                <div class="day">
+                    <h2>Tomorrow</h2>
+                    <img src="assets/some_sun.png">
+                    <p>some sun</p>
+                    <ul>
+                        <li class="max" id="temp3">27°</li>
+                        <li class="min" id="temp4">19°</li>
+                    </ul>
+                </div>
+                <div class="day">
+                    <h2>Friday</h2>
+                    <img src="assets/some_clouds.png">
+                    <p>some clouds</p>
+                    <ul>
+                        <li class="max" id="temp5">21°</li>
+                        <li class="min" id="temp6">16°</li>
+                    </ul>
+                </div>
+                <div class="day">
+                    <h2>Saturday</h2>
+                    <img src="assets/some_sun.png">
+                    <p>some sun</p>
+                    <ul>
+                        <li class="max" id="temp7">26°</li>
+                        <li class="min" id="temp8">21°</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer" id="footer">
+            <div class="img-footer">
+                <img src="assets/cookie.png">
+            </div>
+            <div class="aviso">
+                <h3>Stop! Cookie time</h3>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <div class="div-btn-accept">
+                <button class="btn-accept" onclick="accept()">I Accept</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
